@@ -43,13 +43,4 @@ class ApiClient <T : Decodable > {
         task.resume()
     }
     
-//    @discardableResult
-//    static func performRequest(route:ApiRouter, decoder: JSONDecoder = JSONDecoder(), completion:@escaping (Result<T,AFError> , _ statusCode : Int )->Void) -> DataRequest {
-//        return AF.request(route)
-//                .responseDecodable(decoder:decoder) {(response: DataResponse<  T , AFError >) in
-//                    print(response.result)
-//                    completion(response.result , response.response?.statusCode ?? -1 )
-//        }
-//    }
-    
 }
