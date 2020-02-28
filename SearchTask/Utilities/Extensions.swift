@@ -58,13 +58,16 @@ extension UITableViewCell {
 extension UIImageView {
 
     func loadImage (url : String) {
-        let urlObject = URL(string: url)!
-        getData(from: urlObject ) { data, response, error in
-            guard let data = data, error == nil else { return }
-            DispatchQueue.main.async() { [weak self] in
-                self?.image = UIImage(data: data)
+      
+        if let urlObject = URL(string: url) {
+            getData(from: urlObject ) { data, response, error in
+                guard let data = data, error == nil else { return }
+                DispatchQueue.main.async() { [weak self] in
+                    self?.image = UIImage(data: data)
+                }
             }
         }
+        
     }
     
     private func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {

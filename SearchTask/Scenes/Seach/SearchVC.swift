@@ -15,6 +15,11 @@ class SearchVC : BaseVC<SearchView> {
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        /**
+        - important: init preseter and implement protocol "ProSearchView"
+         - Attention: set delegate and dataSource for tableView and set delegate for searchbar
+         */
+        
         presenter = SearchPresenter(view : self )
         mainView.setDelegateAndDataSource(delegate: self , dataSource: self )
         mainView.searchBar.delegate = self
@@ -25,6 +30,10 @@ class SearchVC : BaseVC<SearchView> {
         
     }
     
+    /**
+     - Attention: call this method when user swipe to refresh
+     */
+    
     @objc private func refreshData () {
         presenter?.refreshData()
     }
@@ -33,7 +42,7 @@ class SearchVC : BaseVC<SearchView> {
 }
 
 extension SearchVC : ProSearchView {
-    
+    // call this method from presenter when get data from API
     func getDataSuccessfully() {
         mainView.tableViewSearch.reloadData()
     }
@@ -45,6 +54,11 @@ extension SearchVC : UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
        
+        /**
+         - important: check if cell is last cell or not
+            and if yes --> call pagiation to load more data
+         */
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             if tableView.visibleCells.contains(cell) {
                 self?.presenter?.callPagination(index: indexPath.row)

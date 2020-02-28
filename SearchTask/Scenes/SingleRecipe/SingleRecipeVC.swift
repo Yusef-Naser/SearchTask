@@ -11,9 +11,9 @@ import SafariServices
 
 class SingleRecipeVC : BaseVC<SingleRecipeView> {
     
-    private var presenter : ProSingleRecipePresetner?
-    
+ 
     private var recipeObject : ModelRecipe?
+    var textIngredientLines = ""
     
     init(recipe : ModelRecipe?) {
         super.init(nibName: nil , bundle: nil )
@@ -27,20 +27,20 @@ class SingleRecipeVC : BaseVC<SingleRecipeView> {
     override func viewDidLoad(){
         super.viewDidLoad()
         
-        presenter = SingleRecipePresenter(view : self )
+       
         
         mainView.imageViewRecipe.loadImage(url: recipeObject?.image ?? "" )
         mainView.labelTitle.text = recipeObject?.label ?? ""
         
-        var s = ""
+        
         recipeObject?.ingredientLines?.forEach({ (str) in
-            if s == "" {
-                s = str
+            if textIngredientLines == "" {
+                textIngredientLines = str
             }else {
-                s += "\n\n\(str)"
+                textIngredientLines += "\n\(str)"
             }
         })
-        mainView.labelIngredientLines.text =  s
+        mainView.labelIngredientLines.text =  textIngredientLines
         
         let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
         let underlineAttributedString = NSAttributedString(string: recipeObject?.url ?? "" , attributes: underlineAttribute)
@@ -61,6 +61,3 @@ class SingleRecipeVC : BaseVC<SingleRecipeView> {
     
 }
 
-extension SingleRecipeVC : ProSingleRecipeView {
-    
-}

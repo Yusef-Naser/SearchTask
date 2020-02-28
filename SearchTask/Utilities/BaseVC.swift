@@ -35,6 +35,7 @@ class BaseVC <T : UIView > : UIViewController , StatusApi {
     lazy var indicator : UIActivityIndicatorView = {
        let i = UIActivityIndicatorView ()
         i.hidesWhenStopped = true
+        i.transform = CGAffineTransform(scaleX: 3, y: 3)
         mainView.addSubview(i)
         i.anchor( centerX: mainView.centerXAnchor , centerY: mainView.centerYAnchor )
         return i

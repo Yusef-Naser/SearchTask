@@ -12,7 +12,6 @@
 		1845A5D6240542010018512E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845A5D4240542010018512E /* Main.storyboard */; };
 		1845A5D8240542020018512E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1845A5D7240542020018512E /* Assets.xcassets */; };
 		1845A5DB240542020018512E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845A5D9240542020018512E /* LaunchScreen.storyboard */; };
-		1845A5E6240542020018512E /* SearchTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A5E5240542020018512E /* SearchTaskTests.swift */; };
 		1845A5F5240542430018512E /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A5F1240542430018512E /* SearchPresenter.swift */; };
 		1845A5F6240542430018512E /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A5F2240542430018512E /* SearchInteractor.swift */; };
 		1845A5F7240542430018512E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845A5F3240542430018512E /* SearchView.swift */; };
@@ -27,11 +26,13 @@
 		184AE3BC240664C900CE74F4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AE3BB240664C900CE74F4 /* Constants.swift */; };
 		184AE3BE240665A400CE74F4 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AE3BD240665A400CE74F4 /* ApiRouter.swift */; };
 		184AE3C12406705200CE74F4 /* ModelSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AE3C02406705200CE74F4 /* ModelSearch.swift */; };
-		184AE3C82406B5DD00CE74F4 /* SingleRecipePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AE3C42406B5DD00CE74F4 /* SingleRecipePresenter.swift */; };
-		184AE3C92406B5DD00CE74F4 /* SingleRecipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AE3C52406B5DD00CE74F4 /* SingleRecipeInteractor.swift */; };
 		184AE3CA2406B5DD00CE74F4 /* SingleRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AE3C62406B5DD00CE74F4 /* SingleRecipeView.swift */; };
 		184AE3CB2406B5DD00CE74F4 /* SingleRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AE3C72406B5DD00CE74F4 /* SingleRecipeVC.swift */; };
 		18A208462407C1350083547E /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A208452407C1350083547E /* SharedData.swift */; };
+		2CECE04424094AE400B17AEE /* SearchVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECE04324094AE400B17AEE /* SearchVCTests.swift */; };
+		2CECE04E2409602C00B17AEE /* SearchInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECE04D2409602C00B17AEE /* SearchInteractorTests.swift */; };
+		2CECE051240962FD00B17AEE /* SingleRecipeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECE050240962FD00B17AEE /* SingleRecipeViewTests.swift */; };
+		2CECE0532409666500B17AEE /* SingleRecipeVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECE0522409666500B17AEE /* SingleRecipeVCTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,6 @@
 		1845A5DA240542020018512E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1845A5DC240542020018512E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1845A5E1240542020018512E /* SearchTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1845A5E5240542020018512E /* SearchTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTaskTests.swift; sourceTree = "<group>"; };
 		1845A5E7240542020018512E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1845A5F1240542430018512E /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		1845A5F2240542430018512E /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
@@ -69,11 +69,14 @@
 		184AE3BB240664C900CE74F4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		184AE3BD240665A400CE74F4 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		184AE3C02406705200CE74F4 /* ModelSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSearch.swift; sourceTree = "<group>"; };
-		184AE3C42406B5DD00CE74F4 /* SingleRecipePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRecipePresenter.swift; sourceTree = "<group>"; };
-		184AE3C52406B5DD00CE74F4 /* SingleRecipeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRecipeInteractor.swift; sourceTree = "<group>"; };
 		184AE3C62406B5DD00CE74F4 /* SingleRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRecipeView.swift; sourceTree = "<group>"; };
 		184AE3C72406B5DD00CE74F4 /* SingleRecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRecipeVC.swift; sourceTree = "<group>"; };
 		18A208452407C1350083547E /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		2CECE0402409471200B17AEE /* SearchTaskTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SearchTaskTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		2CECE04324094AE400B17AEE /* SearchVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCTests.swift; sourceTree = "<group>"; };
+		2CECE04D2409602C00B17AEE /* SearchInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorTests.swift; sourceTree = "<group>"; };
+		2CECE050240962FD00B17AEE /* SingleRecipeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRecipeViewTests.swift; sourceTree = "<group>"; };
+		2CECE0522409666500B17AEE /* SingleRecipeVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRecipeVCTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +134,8 @@
 		1845A5E4240542020018512E /* SearchTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				1845A5E5240542020018512E /* SearchTaskTests.swift */,
+				2CECE04F240962E500B17AEE /* singleRecipe */,
+				2CECE03F2409470300B17AEE /* SearchTests */,
 				1845A5E7240542020018512E /* Info.plist */,
 			);
 			path = SearchTaskTests;
@@ -201,12 +205,29 @@
 		184AE3C32406B5C600CE74F4 /* SingleRecipe */ = {
 			isa = PBXGroup;
 			children = (
-				184AE3C42406B5DD00CE74F4 /* SingleRecipePresenter.swift */,
-				184AE3C52406B5DD00CE74F4 /* SingleRecipeInteractor.swift */,
 				184AE3C62406B5DD00CE74F4 /* SingleRecipeView.swift */,
 				184AE3C72406B5DD00CE74F4 /* SingleRecipeVC.swift */,
 			);
 			path = SingleRecipe;
+			sourceTree = "<group>";
+		};
+		2CECE03F2409470300B17AEE /* SearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CECE0402409471200B17AEE /* SearchTaskTests-Bridging-Header.h */,
+				2CECE04324094AE400B17AEE /* SearchVCTests.swift */,
+				2CECE04D2409602C00B17AEE /* SearchInteractorTests.swift */,
+			);
+			path = SearchTests;
+			sourceTree = "<group>";
+		};
+		2CECE04F240962E500B17AEE /* singleRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				2CECE050240962FD00B17AEE /* SingleRecipeViewTests.swift */,
+				2CECE0522409666500B17AEE /* SingleRecipeVCTests.swift */,
+			);
+			path = singleRecipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +283,7 @@
 					};
 					1845A5E0240542020018512E = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 1845A5CA240542010018512E;
 					};
 				};
@@ -310,8 +332,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184AE3C92406B5DD00CE74F4 /* SingleRecipeInteractor.swift in Sources */,
-				184AE3C82406B5DD00CE74F4 /* SingleRecipePresenter.swift in Sources */,
 				1845A606240545060018512E /* PaginationClass.swift in Sources */,
 				1845A5FD2405429F0018512E /* StatusApi.swift in Sources */,
 				1845A5F8240542430018512E /* SearchVC.swift in Sources */,
@@ -338,7 +358,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1845A5E6240542020018512E /* SearchTaskTests.swift in Sources */,
+				2CECE04E2409602C00B17AEE /* SearchInteractorTests.swift in Sources */,
+				2CECE04424094AE400B17AEE /* SearchVCTests.swift in Sources */,
+				2CECE0532409666500B17AEE /* SingleRecipeVCTests.swift in Sources */,
+				2CECE051240962FD00B17AEE /* SingleRecipeViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +548,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SearchTaskTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -535,6 +559,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yusef.SearchTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SearchTaskTests/SearchTests/SearchTaskTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchTask.app/SearchTask";
@@ -546,6 +572,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SearchTaskTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -556,6 +583,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yusef.SearchTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SearchTaskTests/SearchTests/SearchTaskTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchTask.app/SearchTask";
